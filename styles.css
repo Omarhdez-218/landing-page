@@ -1,13 +1,18 @@
+:root {
+    --dark: #1f2937;
+    --vanilla: #F9FAF8;
+    --gray2: #e5e7eb;
+    --blue2: #3882F6;
+}
+
 * {
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
     font-family: Roboto, sans-serif;
 }
 
 
 .navbar-container {
-    background-color: #1f2937;
+    background-color: var(--dark);
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -15,7 +20,7 @@
 
 #logo {
     font-size: 24px;
-    color: #F9FAF8;
+    color: var(--vanilla);
 }
 
 ul {
@@ -26,7 +31,7 @@ ul {
 
 .link {
     font-size: 18px;
-    color: #e5e7eb;
+    color: var(--gray2)
 }
 
 a {
@@ -36,4 +41,37 @@ a {
 
 a:hover {
     text-decoration: underline;
+}
+
+.hero-container {
+    background-color: var(--dark);
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+    padding: 100px;
+}
+
+.hero-content, img {
+    flex-basis: 500px;
+}
+
+.main-text {
+    font-size: 48px;
+    color: var(--vanilla);
+    font-weight: 900;
+}
+
+.second-text {
+    font-size: 18px;
+    color: var(--gray2);
+}
+
+button {
+    background-color: var(--blue2);
+    color: var(--vanilla);
+    width: 100px;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    font-weight: bold;
 }
